@@ -1,0 +1,1 @@
+xcopy /E /H /K /Y client ..\server\views

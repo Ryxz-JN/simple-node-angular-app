@@ -32,14 +32,15 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
+  console.log(err.message);
 
   if(err.status == 404)
-    res.redirect('/404.html');
+    res.sendFile(path.join(__dirname + '/views/404.html'));
 
   if(err.status == 400)
-    res.redirect('/400.html');
+    res.sendFile(path.join(__dirname + '/views/400.html'));
 
-    res.redirect('/error.html');
+    res.sendFile(path.join(__dirname + '/views/error.html'));
 
 })
 
