@@ -19,9 +19,12 @@ This is a simple project for a webserver weith nodejs and mongodb.
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
+});
+
+app.get('/questions/:id', function(req, res) {
+  res.send("question id is" + req.params.id);
 });
 
 router.post("/question", (req, res) => {
@@ -38,6 +41,8 @@ router.delete("/question", (req, res) => {
 
 module.exports = router;
 ```
+
+
 
 ## Client
 The client consumes the api from the server via http requests.
