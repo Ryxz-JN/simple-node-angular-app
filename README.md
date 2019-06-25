@@ -50,3 +50,33 @@ function getQuestion(id) {
 }
 
 ```
+
+
+## Backend
+To interface with the database a driver is required:
+```
+ cd server
+ npm i -s mongodb
+ ```
+ 
+ Then you can perform atomic operations with the database server.
+ 
+ ```javascript
+ const MongoClient = require('mongodb').MongoClient;
+const url = 'mongodb://localhost:27017';
+const db = 'pdv-quiz';
+
+// Connect
+MongoClient.connect(url, function(err, client) {
+  // Use the admin database for the operation
+  let quizDb = client.db(db);
+  
+  // List all questions
+  quizDb.questions((err, data) => {
+    console.log("questions found");
+    quizDb.close();
+  });
+});
+´´´
+
+Use the [Documentation](https://mongodb.github.io/node-mongodb-native/3.2/api) to learn more.
