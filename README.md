@@ -59,7 +59,7 @@ To interface with the database a driver is required:
  npm i -s mongodb
  ```
  
- Then you can perform atomic operations with the database server.
+ Then you can perform atomic operations with the database server. Make shure the server is running.
  
  ```javascript
  const MongoClient = require('mongodb').MongoClient;
@@ -77,6 +77,5 @@ MongoClient.connect(url, function(err, client) {
     quizDb.close();
   });
 });
-´´´
-
+```
 Use the [Documentation](https://mongodb.github.io/node-mongodb-native/3.2/api) to learn more.
