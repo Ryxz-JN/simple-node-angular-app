@@ -77,7 +77,7 @@ MongoClient.connect(url, function(err, client) {
   let quizDb = client.db(db);
   
   // List all questions
-  quizDb.questions((err, data) => {
+  quizDb.questions.find((err, data) => {
     console.log("questions found");
     quizDb.close();
   });
