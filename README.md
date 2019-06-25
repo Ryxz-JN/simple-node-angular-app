@@ -5,6 +5,10 @@ This is a simple project for a webserver weith nodejs and mongodb.
 1. Install [Nodejs](https://nodejs.org/en) <= 10 
 2. Install [MongoDB](https://www.mongodb.com/download-center/community)
 
+### Recommended tools
+* Lightweight code editor [VScode](https://code.visualstudio.com)
+* API Test with [Postman](https://www.getpostman.com/downloads)
+
 ## Run
 ```
  cd server
