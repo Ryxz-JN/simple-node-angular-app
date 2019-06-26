@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.questions {
+	box-sizing: border-box;
+    width: 80%
+}
+.questions > * {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+.question {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 3%;
+}
+
+.questions::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title { 
+	width: 100%;
+    color: #FFF;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="questions">
+  <div class="title" style="background-color:#111">
+  	<p>Was ist die Antwort auf alle Fragen?<p>
+  </div>
+  <div class="question" style="background-color:#bbb">
+  	<p>41</p>
+  </div>
+  <div class="question" style="background-color:#ccc">
+  <p>42</p>
+  </div>
+  <div class="question" style="background-color:#ddd">
+  <p>43</p>
+  </div>
+</div>
+</body>
+</html>
