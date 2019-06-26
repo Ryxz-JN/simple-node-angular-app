@@ -5,13 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/server/app.js",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
+                "name": "Debug",
+                "type": "node",
+                "request": "launch",
+                "cwd": "${workspaceFolder}/server",
+                "runtimeExecutable": "npm",
+                "runtimeArgs": [
+                    "run", "debug"
+                ],
+                "port": 9229
         }
     ]
 }
