@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#1').hide();
+    $('#btn1').hide();
+    $('#btn2').hide();
+
+  $("#btn0").click(function(){
+      $('#btn0').remove();
+      $('#0').remove();
+      $('#1').show();
+      $('#btn1').show();
+      $('#btn2').show();
+
+    function getQuestion(random) {
+ $.get( `api/questions/${random}`, (data) => {
+   alert("Question found!");
+
+    function getQuestion(random) {
+ $.get( `api/questions/${random}`, (data) => {
+   alert("Question found!");
+
+    });
+}
+ });
+  
+}
+    
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="0">Get Question</p>  
+<p id="1">..</p>  
+
+<button id="btn0">Get Question</button>
+<button id="btn1">a</button>
+<button id="btn2">b</button>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /*body {
+    margin: 0;
+  }*/
+
+  .row {
+    /*padding: 95px;*/
+    color: #2f3640;
+    text-align: center;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+  /*Style the buttons*/
+  /*button {
+    background-color: #44bd32;
+    padding: 10px;
+    color: #dcdde1;
+  }
+
+  .buttonQ {
+    background-color: #dcdde1;
+    color: #2f3640;
+    text-align: center;
+  }*/
+  
+  .questions {
+    background-color: #dcdde1;
+    color: #2f3640;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    height: 60vh;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;   
+  }
+
+  .title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+  }
+
+  div {
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+  }
+
+  .bg-img {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .buttonAnswer{
+    display:inline-block;
+    margin:20px;
+    text-decoration:none;
+    font-family:Arial;
+    font-size:25px;
+    border:1px solid #fff;
+    border-radius:15px;
+    color:#fff;
+    background-color:#A8BCD0;
+    padding:5px 15px;
+    font-weight:bold;
+    box-shadow:3px 3px 4px #8CA0B2;
+    text-shadow:1px 1px 2px #6E91B2;
+    margin-top: 45vh;
+  }
+
+  /*.buttonQ {
+    display:inline-block;    
+    text-decoration:none;
+    font-family:Arial;
+    font-size:25px;
+    border:1px solid #fff;
+    border-radius:15px;
+    color:#fff;
+    background-color:#A8BCD0;   
+    font-weight:bold;
+    box-shadow:3px 3px 4px #8CA0B2;
+    text-shadow:1px 1px 2px #6E91B2;
+    margin-top: 3vh;
+  }
+
+  .buttonQ:hover{
+    background-color:#8BA7C1;
+  }*/
+
+  .buttonAnswer:hover{
+    background-color:#8BA7C1;
+  }
+
+  .test{
+    background-color: rgb(61, 190, 61);
+  }
+  .score {
+    color: #2f3640;
+    text-align: right;
+  }
+
+  .score{
+    margin-right: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .timer {
+    color: #2f3640;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  #progressBar {
+    width: 90%;
+    background-color: #ddd;
+    margin-top: 50vh;
+    height: 30px;
+  }
+  
+  #progressBar div{
+    width: 100%;
+    text-align: right;
+    height: 30px;
+    background-color: #4CAF50;
+  } 

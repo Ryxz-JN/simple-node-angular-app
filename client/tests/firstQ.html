@@ -1,0 +1,27 @@
+<!DOCTYPE html></script>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $('#b').hide();
+$("#btn1").click(function(){
+    alert("You're right it's " + $("#b").text());
+  });
+  $("#btn2").click(function(){
+    alert("That's wrong it's " + $("#b").text());
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="a">What is 3 * 4</p>
+<p id="b">12</p>
+
+<button id="btn1">12</button>
+<button id="btn2">15</button>
+
+</body>
+</html>

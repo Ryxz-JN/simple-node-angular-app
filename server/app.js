@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://localhost:27017/";
 
 var app = express();
 
@@ -16,8 +18,8 @@ app.use(cookieParser());
 // set routers for api
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-app.use('/api', indexRouter);
-app.use('/users', usersRouter);
+var questionsRouter = require('./routes/question');
+app.use('/api', questionsRouter);
 
 // catch errors by client
 app.use(function(req, res, next) {
