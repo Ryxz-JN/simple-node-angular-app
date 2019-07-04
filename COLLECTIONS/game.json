@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5d13335382f07d22b8c6e6e1"},"num":"0","title":"Who is the best person?","a1":"Elon Musk","a2":"Jeff Bezos","result":"a1","path_a1":"elon_musk.jpg","path_a2":"jeff_bezos.jpg"}
+{"_id":{"$oid":"5d13335382f07d22b8c6e6e2"},"num":"1","title":"Yes or No?","a1":"Yes","a2":"No","result":"a1","path_a1":"yes.jpg","path_a2":"no.jpg"}
+{"_id":{"$oid":"5d13335382f07d22b8c6e6e3"},"num":"2","title":"Cow or Chicken?","a1":"Cow","a2":"Chicken","result":"a2","path_a1":"cow.jpg","path_a2":"chicken.jpg"}
+{"_id":{"$oid":"5d1477c851978310842a6a08"},"num":"3","title":"Wer ist breiter, Johannes oder Karl?","a1":"Johannes","a2":"Karl","result":"a1","path_a1":"johannes.jpg","path_a2":"karl.jpg"}
+{"_id":{"$oid":"5d1488e442c01e1834148f41"},"num":"4","title":"Beste deutsche Serie?","a1":"Tatort","a2":"Dark","result":"a2","path_a1":"tatort.jpg","path_a2":"dark.jpg"}
+{"_id":{"$oid":"5d19bd4dd58910350082da15"},"num":"5","title":"Warum ist Gras illegal?","a1":"Weil es eine Illegale Droge ist","a2":"Durch einen amerikanischen Politiker, der sich mit absicht auf falsche Fakten berufen hat","result":"a2","path_a1":"gras.jpg","path_a2":"ami.jpg"}
