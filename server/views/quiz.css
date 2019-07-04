@@ -2,9 +2,9 @@
     box-sizing: border-box;
   }
   
-  /*body {
-    margin: 0;
-  }*/
+  body {
+    /*margin: 0;*/
+  }
 
   .row {
     /*padding: 95px;*/
@@ -94,30 +94,9 @@
     text-shadow:1px 1px 2px #6E91B2;
     margin-top: 45vh;
   }
-
-  /*.buttonQ {
-    display:inline-block;    
-    text-decoration:none;
-    font-family:Arial;
-    font-size:25px;
-    border:1px solid #fff;
-    border-radius:15px;
-    color:#fff;
-    background-color:#A8BCD0;   
-    font-weight:bold;
-    box-shadow:3px 3px 4px #8CA0B2;
-    text-shadow:1px 1px 2px #6E91B2;
-    margin-top: 3vh;
-  }
-
-  .buttonQ:hover{
-    background-color:#8BA7C1;
-  }*/
-
   .buttonAnswer:hover{
     background-color:#8BA7C1;
   }
-
   .test{
     background-color: rgb(61, 190, 61);
   }
@@ -133,23 +112,4 @@
     font-weight: bold;
   }
 
-  .timer {
-    color: #2f3640;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
-  }
-
-  #progressBar {
-    width: 90%;
-    background-color: #ddd;
-    margin-top: 50vh;
-    height: 30px;
-  }
   
-  #progressBar div{
-    width: 100%;
-    text-align: right;
-    height: 30px;
-    background-color: #4CAF50;
-  } 

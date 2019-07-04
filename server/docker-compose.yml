@@ -1,0 +1,17 @@
+version: '3'
+networks:
+  default: {}
+services:
+    myapp:
+        image: rangerjones/node-web-app
+        ports:
+            - 80:80
+        networks: 
+            - default
+    db:
+        image: mongo
+        networks: 
+            - default
+        ports:
+            - 6000:27017
+    
